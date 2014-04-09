@@ -820,4 +820,5 @@ class Parsedown
 
         return $text;
     }
-}
+} 
+?>
