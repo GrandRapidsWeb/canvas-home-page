@@ -3,7 +3,7 @@
 Plugin Name: GR Canvas Home Full Slider
 Plugin URI: http://twitter.com/jwiere03
 Description: Adds full width slider widget area and headline text area to homepage on a Canvas theme.
-Version: 0.7
+Version: 0.8
 Author: John Wierenga
 Author URI: http://twitter.com/jwiere03
 
