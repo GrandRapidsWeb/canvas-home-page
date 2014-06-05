@@ -3,11 +3,11 @@
 Plugin Name: GR Canvas Home Full Slider
 Plugin URI: https://github.com/GrandRapidsWeb/canvas-home-page
 Description: Adds full width slider widget area and headline text area to homepage on a Canvas theme. Now With Plugin Auto Update Functionality.
-Version: 0.9.2
-Author: John Wierenga
-Author URI: http://twitter.com/jwiere03
+Version: 0.9.3
+Author: Team Project
+Author URI: http://wordpress.org
 
-/*  Copyright 2014 John Wierenga (email : johnewierenga@gmail.com)
+/*  Copyright 2014
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -52,11 +52,11 @@ register_sidebar(array(
 }
 
 function gr_home_widget() {
-    if (is_front_page()) { ?><ul style="margin: 0 auto; text-align: center;"><div class="home-slider-widget"><?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Home Slider Widget')) :
+    if (is_front_page()) { ?><ul style="margin: 0 auto; text-align: center; display: none;"><div class="home-slider-widget"><?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Home Slider Widget')) :
 
-endif; ?></div><div class="home-text-widget"> <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Home Text Widget')) :
+endif; ?></ul</div><div class="home-text-widget" style="background-color: #000000;"> <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Home Text Widget')) :
 
-endif;?></div></ul><?php }
+endif;?><?php }
 }
 add_action('woo_content_before','gr_home_widget');
 ?>
